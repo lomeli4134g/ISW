@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #e0e5ec;
+    background: #0f0f0f;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo animado */
+#background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #0a0f29, #162a4f, #3a8bd6);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Menú de navegación */
+header {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el menú */
+    padding: 20px 20px;
+    background-color: #121a32;
+    color: rgb(39, 90, 255);
+}
+
+/* Estilo del logo */
+.logo {
+    flex: 0 0 auto; /* Permite que el logo no crezca */
+}
+
+.logo img {
+    height: 50px; /* Ajusta la altura del logo según sea necesario */
+}
+
+/* Estilo de la lista del menú */
+nav {
+    flex: 1; /* Permite que el nav use el espacio restante */
+    display: flex;
+    justify-content: center; /* Centra los botones */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Espacio entre los botones */
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #8bbfef;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+/* Secciones */
+.seccion {
+    display: none;
+    padding: 40px 20px;
+ 
+}
+
+.seccion h2 {
+    color: #ffffff;
+}
+
+.seccion.activa {
+    display: block;
+}
+
+/* Estilos futuristas de botones, encabezados y enlaces */
+h1, h2 {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(58, 139, 214, 0.8);
+}
+
+a {
+    color: #82c3ff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #3a8bd6;
+}
+
+/* Estilo de partículas */
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #82c3ff;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: moveParticle linear infinite;
+}
+
+/* Animación de movimiento */
+@keyframes moveParticle {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(20vw);
+    }
+}
