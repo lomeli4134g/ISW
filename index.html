@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingeniería en Software - ITSON</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 
@@ -16,49 +18,167 @@
         <div class="logo">ISW ITSON</div>
         <nav>
             <ul>
-                <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
-                <li><a href="#" onclick="mostrarSeccion('clasificacion')">Clasificación de Software</a></li>
-                <li><a href="#" onclick="mostrarSeccion('ciclo-vida')">Ciclo de Vida</a></li>
-                <li><a href="#" onclick="mostrarSeccion('importancia')">Importancia</a></li>
-                <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+                <li>
+                    <li><a href="#inicio" onclick="mostrarSeccion('inicio')">inicio</a></li> <!-- Enlace directo a la sección de inicio sin submenú -->
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Introduccion</a>
+                    <ul class="submenu">
+                        <li><a href="#subseccion1" onclick="mostrarSeccion('subseccion1')">● Conceptos de ingenieria en software.</a></li>
+                        <li><a href="#subseccion2" onclick="mostrarSeccion('subseccion2')">● Disciplina de Ingeniería de Software en el campo de la
+                            Computación.</a></li>
+                        <li><a href="#subseccion3" onclick="mostrarSeccion('subseccion3')">● Tendencias en la disciplina de Ingeniería de Software</a></li>
+                        <li><a href="#subseccion4" onclick="mostrarSeccion('subseccion4')">● Concepto de Software, tipos y cualidades o atributos</a></li>
+                        <li><a href="#subseccion5" onclick="mostrarSeccion('subseccion5')">● La función de los Sistemas de Información, tipos de
+                            decisiones y usuarios de la información.</a></li>
+                        <li><a href="#subseccion6" onclick="mostrarSeccion('subseccion6')">● Compromisos éticos en el desarrollo de Software</a></li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Ciclo de Vida</a>
+                    <ul class="submenu">
+                        <li><a href="#fase1" onclick="mostrarSeccion('fase1')">Fase 1</a></li>
+                        <li><a href="#fase2" onclick="mostrarSeccion('fase2')">Fase 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Importancia</a>
+                    <ul class="submenu">
+                        <li><a href="#aspecto1" onclick="mostrarSeccion('aspecto1')">Aspecto 1</a></li>
+                        <li><a href="#aspecto2" onclick="mostrarSeccion('aspecto2')">Aspecto 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Extra</a>
+                    <ul class="submenu">
+                        <li><a href="#formulario" onclick="mostrarSeccion('formulario')">Extra....</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
 
     <!-- Secciones de Contenido -->
-    <section id="inicio" class="seccion activa">
-        <h1 style="font-size: 75px;">Ingeniería en Software</h1>
-        <p style="font-size: 30px;">
-            ​Crea el futuro: Diseña, desarrolla, innova.
-        </p>
-        <h2 style="margin: 500px 20px 100px 25px; text-align: center;font-size: 30px;">Que es la ingenieria en software?</h2>
-        <p style="font-size: 30px;text-align: center;margin-top: 10px; margin-right: 50px; margin-bottom: 10px; margin-left: 50px;">La Ingeniería en Software es la disciplina que se encarga de diseñar, desarrollar
-            , mantener y gestionar sistemas de software de manera eficiente y confiable, aplicando principios de ingeniería.
-             Incluye áreas clave como el análisis y diseño para comprender las necesidades del usuario, el desarrollo y 
-             programación para implementar el software, pruebas para asegurar su calidad, y mantenimiento para su mejora
-              continua. Además, considera la gestión de proyectos para cumplir plazos y presupuestos, así como prácticas
-               de ciberseguridad y ética profesional para proteger los datos y asegurar el buen uso de la tecnología.</p>
-    </section>
+ 
+<section id="inicio" class="seccion activa">
 
-    <section id="clasificacion" class="seccion">
-        <h2>Clasificación de Software</h2>
-        <p>El software se clasifica en distintas categorías...</p>
-    </section>
+    <h1 style="font-size: 75px;">Ingeniería en Software</h1>
+    <p style="font-size: 30px;">Crea el futuro: Diseña, desarrolla, innova.</p>
+    <h2 style="margin: 500px 20px 100px 25px; text-align: center;font-size: 30px;">¿Qué es la ingeniería en software?</h2>
+<div style="padding: 50px;margin-bottom: 200px;">
+      <p style="font-size: 20px;">
+  La Ingeniería en Software es una disciplina de la ingeniería que se centra en el diseño, desarrollo, mantenimiento y gestión de sistemas de software. Su propósito es aplicar principios y métodos de ingeniería para crear software de alta calidad que satisfaga las necesidades de los usuarios y se entregue dentro de plazos y presupuestos establecidos.
+</p>
 
-    <section id="ciclo-vida" class="seccion">
-        <h2>Ciclo de Vida del Software</h2>
-        <p>El ciclo de vida del software cubre distintas etapas importantes...</p>
-    </section>
+<p style="font-size: 20px;">
+  El campo abarca el ciclo de vida del software, que incluye varias etapas clave como la planificación, donde se definen los objetivos del proyecto; el análisis de requisitos, que implica recolectar y documentar las necesidades del cliente; el diseño, que establece la arquitectura del sistema y la interacción entre sus componentes; la implementación, donde se lleva a cabo la codificación; y las pruebas, que se realizan para detectar errores y asegurar el correcto funcionamiento del software.
+</p>
 
-    <section id="importancia" class="seccion">
-        <h2>Importancia del Software</h2>
-        <p>El software es esencial en la era digital...</p>
-    </section>
+<p style="font-size: 20px;">
+  La metodología de desarrollo es otro aspecto fundamental en la Ingeniería en Software. Se utilizan enfoques como el modelo en cascada, que sigue un proceso lineal, y el desarrollo ágil, que permite mayor flexibilidad y adaptación a cambios durante el desarrollo. Estas metodologías ayudan a gestionar proyectos de manera eficiente y a facilitar la colaboración entre equipos.
+</p>
 
-    <section id="contacto" class="seccion">
-        <h2>Contacto</h2>
-        <p>Escríbenos a <a href="mailto:info@ejemplo.com">info@ejemplo.com</a>.</p>
-    </section>
+<p style="font-size: 20px;">
+  El mantenimiento y soporte del software son cruciales después de su implementación, ya que los sistemas requieren actualizaciones, correcciones y mejoras para adaptarse a nuevas necesidades o tecnologías. La Ingeniería en Software es vital en el contexto actual, donde casi todas las industrias dependen de soluciones informáticas para mejorar su operativa y productividad.
+</p>
+
+<p style="font-size: 20px;">
+  Al fomentar la innovación tecnológica, esta disciplina no solo contribuye al desarrollo de nuevas herramientas y aplicaciones, sino que también mejora la calidad de vida al hacer la tecnología más accesible y efectiva. En resumen, la Ingeniería en Software combina aspectos técnicos, de gestión y de diseño, proporcionando soluciones que añaden valor a las organizaciones y a la sociedad en general.
+</p>
+</div>
+<div class="marco1">
+    <div class="contenedor">
+        <img src="images/ITSON_ISW.jpg" alt="ITSON_ISW" class="responsive-img">
+        <h2 class="titulo">¿Por que estudiar ingenieríaen software en itson?</h3>
+        <p class="texto">En ITSON, la Ingeniería en Software te da las herramientas para crear soluciones tecnológicas 
+            que responden a las necesidades del mundo actual. Desde aplicaciones web hasta inteligencia artificial,
+             este programa te prepara para enfrentar desafíos reales y te conecta con empresas locales e internacionales.
+            Aprenderás de docentes con experiencia en la industria y podrás aplicar tus conocimientos en proyectos que 
+            enriquecen tu portafolio y te abren puertas en el mercado laboral. Si buscas una carrera en tecnología con 
+            oportunidades para crecer y colaborar, ITSON es tu mejor opción. ¡Explora el futuro de la tecnología con nosotros!.</p>
+    </div>
+
+</div>
+
+<div style="font-size: 30px;padding: 50px;margin-top: 100px;">
+    <h2>Que hace un ingeniero en software?</h2>
+</div>
+<div style="padding: 40px;margin-top: 10px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ht4LFdcZhCw" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+</div>
+
+</section>
+
+<section id="subseccion1" class="seccion">
+    <h2 style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;">Concepto de Ingeniería de Software</h2>
+    <p style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;margin-bottom: 50px;">
+        <strong>Concepto de Ingeniería de Software:</strong>
+        La ingeniería de software es una disciplina que se encarga del diseño, desarrollo, mantenimiento y gestión de sistemas de software de alta calidad. Su objetivo es aplicar principios científicos y matemáticos para crear software eficiente, seguro y adaptado a las necesidades específicas de los usuarios. Esta disciplina abarca todo el ciclo de vida del software, desde la planificación y análisis de requerimientos hasta la implementación, pruebas y mantenimiento continuo. La ingeniería de software busca optimizar el uso de recursos y reducir los errores, garantizando que el producto final sea confiable y cumpla con los estándares de calidad.
+      </p>
+      <img src="images/seccion1.1.jpg" alt="ingenieria en software" style="display: block; margin: 0 auto; width: 500px; height: auto;">
+
+</section>
+
+<section id="subseccion2" class="seccion">
+    <h2 style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;">Disciplina de Ingeniería de Software en el Campo de la Computación</h2>
+    <p style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;margin-bottom: 50px;">
+        La ingeniería de software se posiciona como una disciplina esencial en el campo de la computación, integrando técnicas de ingeniería con las demandas del desarrollo de software para satisfacer las necesidades del mercado.
+    </p>
+</section>
+
+<section id="subseccion3" class="seccion">
+    <h2 style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;">Tendencias en la Disciplina de Ingeniería de Software</h2>
+    <p style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;margin-bottom: 50px;">
+        Entre las tendencias actuales en ingeniería de software se encuentran la adopción creciente de la inteligencia artificial y el aprendizaje automático, que optimizan el desarrollo y mantenimiento del software al automatizar tareas como pruebas y detección de errores. También son relevantes la arquitectura de microservicios y el desarrollo en la nube, que permiten una mayor escalabilidad y despliegue continuo de aplicaciones. Además, la integración de ciberseguridad desde el diseño y la implementación de prácticas ágiles y DevOps fomentan la colaboración y la eficiencia en los equipos de trabajo. La utilización de herramientas de bajo código también está en aumento, facilitando la participación de usuarios sin experiencia en programación en el proceso de desarrollo.
+    </p>
+</section>
+
+<section id="subseccion4" class="seccion">
+    <h2 style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;">Concepto de Software, Tipos y Cualidades o Atributos</h2>
+    <p style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;margin-bottom: 50px;">
+        El software se define como un conjunto de instrucciones o programas que permiten realizar tareas específicas en dispositivos informáticos, facilitando la interacción entre el usuario y el hardware. Existen varios tipos de software, incluyendo software de sistema (como sistemas operativos), software de aplicación (programas como procesadores de texto) y software de desarrollo (herramientas para crear otros programas). Las cualidades del software abarcan aspectos como eficiencia, seguridad, usabilidad y mantenibilidad, garantizando su correcto funcionamiento, protección contra amenazas, facilidad de uso y adaptabilidad a cambios futuros. Un software de calidad se distingue por su portabilidad, confiabilidad y rendimiento óptimo.
+    </p>
+</section>
+
+<section id="subseccion5" class="seccion">
+   
+    <h2 style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;">La Función de los Sistemas de Información, Tipos de Decisiones y Usuarios de la Información</h2>
+    <p style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;margin-bottom: 50px;">
+        Los sistemas de información se encargan de recopilar, procesar, almacenar y distribuir datos para facilitar la toma de decisiones y mejorar la eficiencia organizacional. Estos sistemas apoyan distintos tipos de decisiones: estratégicas (a largo plazo), tácticas (gestión intermedia) y operativas (diarias). Los usuarios de la información en estos sistemas abarcan desde la alta dirección y gerentes intermedios hasta el personal operativo y, en ocasiones, clientes externos. Son fundamentales para optimizar procesos, apoyar la planificación y coordinar actividades dentro de las organizaciones.
+    </p>
+</section>
+
+<section id="subseccion6" class="seccion">
+    <h2 style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;">Compromisos Éticos en el Desarrollo de Software</h2>
+<p style="font-size: 20px;text-align: center;max-width: 600px;margin: 0 auto;margin-top: 50px;margin-bottom: 50px;">
+    Los compromisos éticos en el desarrollo de software implican la responsabilidad de crear aplicaciones seguras, eficientes y respetuosas de la privacidad y derechos de los usuarios. Los desarrolladores deben asegurarse de que el software funcione de manera confiable, minimizando errores y riesgos que puedan afectar a los usuarios o sus datos. Asimismo, deben evitar prácticas como el plagio de código o el uso no autorizado de propiedad intelectual, respetando licencias y derechos de autor. Es crucial también ser transparente respecto a las funcionalidades del software y el uso de los datos de los usuarios, fomentando la honestidad y confianza en la relación con clientes y usuarios.
+</p>
+</section>
+
+<section id="fase1" class="seccion">
+    <h2>Contenido de la Fase 1</h2>
+    <p>Aquí va el contenido específico para la Fase 1 del ciclo de vida del software...</p>
+</section>
+
+<section id="fase2" class="seccion">
+    <h2>Contenido de la Fase 2</h2>
+    <p>Aquí va el contenido específico para la Fase 2 del ciclo de vida del software...</p>
+</section>
+
+<section id="aspecto1" class="seccion">
+    <h2>Contenido del Aspecto 1</h2>
+    <p>Aquí va el contenido específico para el Aspecto 1 de la importancia del software...</p>
+</section>
+
+<section id="aspecto2" class="seccion">
+    <h2>Contenido del Aspecto 2</h2>
+    <p>Aquí va el contenido específico para el Aspecto 2 de la importancia del software...</p>
+</section>
 
     <script src="script.js"></script>
 </body>

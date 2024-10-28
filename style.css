@@ -26,7 +26,11 @@ header {
     align-items: center; /* Alinea verticalmente el logo y el menú */
     padding: 20px 20px;
     background-color: #121a32;
-    color: rgb(39, 90, 255);
+    color: rgb(255, 255, 255);
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0; /* Coloca el menú en la parte superior de la ventana */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    z-index: 1000;
 }
 
 /* Estilo del logo */
@@ -64,10 +68,45 @@ nav a {
 nav a:hover {
     color: #ffffff;
 }
+
+
+.marco1 {
+    border: 2px solid #ffffff; /* Cambia el color y el grosor del marco */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+    margin: 20px; /* Espacio externo alrededor del marco */
+    background-color: #120e4b; /* Color de fondo del marco (opcional) */
+}
+.contenedor {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 25px; /* Espacio entre la imagen y el texto */
+}
+
+.imagen {
+    width: 10%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+.responsive-img {
+    width: 30%; /* La imagen ocupará el 100% del ancho de su contenedor */
+    height: auto;
+}
+
+.texto {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.titulo {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 /* Secciones */
 .seccion {
     display: none;
     padding: 40px 20px;
+   
  
 }
 
@@ -94,6 +133,35 @@ a:hover {
     color: #3a8bd6;
 }
 
+.submenu {
+    display: none;
+    position: absolute; /* Asegúrate de que se superponga correctamente */
+    background-color: #4776f8; /* Color de fondo del submenú */
+    padding: 10px;
+    z-index: 1000; /* Mantén el submenú por encima de otros elementos */
+    
+}
+
+
+/* Muestra el submenú cuando se pasa el mouse por encima del elemento padre */
+nav ul li:hover .submenu {
+    display: block;
+}
+
+/* Asegúrate de que el submenú tenga estilo */
+.submenu li {
+    white-space: nowrap; /* Evita que se rompan las líneas */
+}
+
+.submenu a {
+    padding: 20px 10px; /* Añade algo de relleno a los enlaces del submenú */
+    color: #0e1318; /* Color del texto en el submenú */
+}
+
+.submenu a:hover {
+    color: #ffffff; /* Color del texto al pasar el mouse por encima */
+}
+
 /* Estilo de partículas */
 .particle {
     position: absolute;
@@ -112,5 +180,84 @@ a:hover {
     }
     100% {
         transform: translateY(100vh) translateX(20vw);
+    }
+
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Clase para aplicar la animación */
+.activa {
+    animation: fadeInUp 0.5s ease forwards; /* Duración y tipo de animación */
+}
+
+@media (max-width: 768px) {
+    /* Cambia el menú a un diseño vertical para pantallas pequeñas */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    /* Ajusta la altura y alineación del logo */
+    .logo img {
+        height: 40px;
+    }
+
+    /* Cambia el estilo del menú de navegación */
+    nav {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia los elementos de la lista a una columna */
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    /* Estilos de texto para secciones y encabezados */
+    .seccion {
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Media Query para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}
+/* Margen para que el contenido no se solape con el menú */
+@media (max-width: 768px) {
+    /* Añade margen superior solo en dispositivos móviles */
+    .seccion {
+        margin-top: 200px; /* Ajusta el valor según la altura del menú */
     }
 }

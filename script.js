@@ -1,10 +1,16 @@
-// Mostrar la sección seleccionada
 function mostrarSeccion(id) {
+    // Oculta todas las secciones
     const secciones = document.querySelectorAll('.seccion');
-    secciones.forEach(seccion => seccion.classList.remove('activa'));
-    document.getElementById(id).classList.add('activa');
-}
+    secciones.forEach(seccion => {
+        seccion.classList.remove('activa');
+    });
 
+    // Muestra la sección seleccionada
+    const seccionActiva = document.getElementById(id);
+    if (seccionActiva) {
+        seccionActiva.classList.add('activa');
+    }
+}
 // Crear fondo de partículas
 const createParticles = () => {
     const particles = 100; // Número de partículas
